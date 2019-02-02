@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OrdersServiceRaports
+namespace OrdersServiceRaports.Formularze
 {
-    public partial class Form1 : Form
+    public partial class FormPictureXml : Form
     {
-        public Form1()
+        public FormPictureXml()
         {
             InitializeComponent();
+        }
+
+        private void FormPictureXml_Scroll(object sender, ScrollEventArgs e)
+        {
+            
         }
     }
 }
