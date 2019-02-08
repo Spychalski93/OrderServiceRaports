@@ -46,36 +46,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularze\FormPictureCsv.cs">
+    <Compile Include="Forms\FormPictureCsv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularze\FormPictureCsv.Designer.cs">
+    <Compile Include="Forms\FormPictureCsv.Designer.cs">
       <DependentUpon>FormPictureCsv.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularze\FormPictureXml.cs">
+    <Compile Include="Forms\FormPictureXml.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularze\FormPictureXml.Designer.cs">
+    <Compile Include="Forms\FormPictureXml.Designer.cs">
       <DependentUpon>FormPictureXml.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularze\Form_Main.cs">
+    <Compile Include="Forms\Form_LoadFile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularze\Form_Main.Designer.cs">
+    <Compile Include="Forms\Form_LoadFile.Designer.cs">
+      <DependentUpon>Form_LoadFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Main.Designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Generowanie raportów\Raports.cs" />
+    <Compile Include="Forms\Form_Raports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Raports.Designer.cs">
+      <DependentUpon>Form_Raports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularze\FormPictureCsv.resx">
+    <Compile Include="ReadDate\ReadDateFromCsv.cs" />
+    <EmbeddedResource Include="Forms\FormPictureCsv.resx">
       <DependentUpon>FormPictureCsv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularze\FormPictureXml.resx">
+    <EmbeddedResource Include="Forms\FormPictureXml.resx">
       <DependentUpon>FormPictureXml.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularze\Form_Main.resx">
+    <EmbeddedResource Include="Forms\Form_LoadFile.resx">
+      <DependentUpon>Form_LoadFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Raports.resx">
+      <DependentUpon>Form_Raports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,7 +105,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Opis programu\Opis zadania i załączniki.pdf" />
-    <None Include="Pliki testowe\zamowienie.csv" />
+    <None Include="Pliki testowe\z.csv" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,10 +120,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Odczyt plików\" />
+    <Folder Include="Generating raports\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pliki testowe\zamowienie2.xml" />
+    <Content Include="Pliki testowe\z.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

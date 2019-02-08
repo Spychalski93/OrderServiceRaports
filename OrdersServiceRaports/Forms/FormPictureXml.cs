@@ -17,9 +17,6 @@ namespace OrdersServiceRaports.Formularze
             InitializeComponent();
         }
 
-        private void FormPictureXml_Scroll(object sender, ScrollEventArgs e)
-        {
-            
-        }
+       
     }
 }

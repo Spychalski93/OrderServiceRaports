@@ -29,5 +29,18 @@ namespace OrdersServiceRaports
             Formularze.FormPictureCsv form = new Formularze.FormPictureCsv();
             form.Show();
         }
+
+        private void button_LoadFile_Click(object sender, EventArgs e)
+        {
+            Formularze.Form_LoadFile form = new Formularze.Form_LoadFile();
+            form.ShowDialog();           
+
+        }
+
+        private void button_Raports_Click(object sender, EventArgs e)
+        {
+            Formularze.Form_Raports form = new Formularze.Form_Raports();
+            form.ShowDialog();
+        }
     }
 }

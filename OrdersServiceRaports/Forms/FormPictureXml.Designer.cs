@@ -43,7 +43,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(601, 482);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 0;          
             // 
             // pictureBox1
             // 
@@ -69,7 +69,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Przykładowy plik *.xml";
             this.TopMost = true;
-            this.Scroll += new System.Windows.Forms.ScrollEventHandler(this.FormPictureXml_Scroll);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
